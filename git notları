@@ -3,6 +3,25 @@ eklemen gerekli.
 -------------
 git branch yazarsan projedeki branchleri gösterir git branch navbar yazarsan navbar adında bir branch açar. git checkout navbar yazarsan navbar branch ine geçersin yazmaz isen master baranch inde kalırsın.
 git checkout -b productcontroller yazarsan eğer bu seferde direkt olarak productcontroller branch i oluşturur ve ona geçer. git branch -D productcontroller dersen de bu branch i siler. 
-
-
+git stash de yapılan değişiklikler kaydediliyor, git stash list ile bunları görebiliriz. 
+git stash pop ile de en son yapılan değişikliği getir işlemini yapıyor. 
+-----
+yani kısaca git stash e örnek vererek anlatalım şimdi sen son yaptığın comit den sonra baya bi şeyler yazdın ama baktın ki son yaptığın comit işleminde bir sorun var 
+ama sen de baya bi şeyler yazdın hepsini geri alamayız abi direkt git stash diyorsun son comitten sonra yaptıüın değişiklikler kaydediliyor ve en son yaptığın comit işlemine dönüyorsun 
+git stash pop ile de stash i getiriyorsun ama bence git stash apply yap bu da aynı işlevi görüyor ama stash i silmiyr pop stash i siliyor. 
+şimdi sen burda değişiklik olarak sadece a yazdın sonra comit etmedin daha, sonra git stash yazarsan a kaybolur stash'e kaydedilir git stash apply dersen a geri gelir.
+----
+git marge ile de branch leri birleştirebiliyoruz yani master branch e günün sonunda atama yapmamız gerekli. Bu şekilde master branch e birleştirme yapabiliyoruz.
+git rebase de birleştirme yapıyor ama commit geçmişi daha düzgün görünmesini sağlıyor bi de farklı 2 developer aynı dosya üzerinde çalıştı burda conflict çözümleri gerekli oluyor.
+başıma geldiği zaman araştırım şuan öğrenmsem bile unutacağım o yüzden sadece bu olayın olduğunu bilin ve başınıza geldiği zaman heee böyle bir şey vardı diyip işinizi çözersiniz.
+------
+git revert:
+git revert, belirli bir commit'in değişikliklerini geri almanızı sağlar.
+Bu komut, geri alma işlemi yaparken geçmişteki değişiklikleri korur ve yeni bir commit oluşturarak geri alma işlemini gerçekleştirir.
+Özellikle paylaşılan bir repository'de güvenli bir geri alma yöntemi olarak kullanılabilir, çünkü geçmişi değiştirmek yerine yeni bir commit ekler.
+---------
+git reset:
+git reset, commit geçmişinizi değiştirmenizi veya geri almanızı sağlar.
+Bu komut, commit geçmişini değiştirir ve mevcut branch'in durumunu belirli bir commit'e veya duruma göre ayarlar. yani bizim comit geçmişimiz var ya ordaki istenilen comite gidebiliyorsun.
+Eğer lokaldeki çalışma dizininde yaptığınız değişiklikleri de geri almak istiyorsanız, --hard seçeneğini kullanmanız gerekecektir. Ancak bu durumda dikkatli olmanız önemlidir, çünkü bu işlem geri döndürülemez.
 yazarak öğrenme bence iyi bir taktik sizde denemelisiniz. 
