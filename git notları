@@ -1,3 +1,8 @@
 bir şirkette herkesin ayrı görevi vardır. Mesela sana frontend de dediler ki navbarı tasarla sen master branch de deiğilde kendin bir branch oluşturup o branch de kendi değişikliklerini yapıp ana master brabch ine 
 eklemen gerekli.
 -------------
+git branch yazarsan projedeki branchleri gösterir git branch navbar yazarsan navbar adında bir branch açar. git checkout navbar yazarsan navbar branch ine geçersin yazmaz isen master baranch inde kalırsın.
+git checkout -b productcontroller yazarsan eğer bu seferde direkt olarak productcontroller branch i oluşturur ve ona geçer. git branch -D productcontroller dersen de bu branch i siler. 
+
+
+yazarak öğrenme bence iyi bir taktik sizde denemelisiniz. 
