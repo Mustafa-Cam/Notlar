@@ -14,3 +14,5 @@ Bir sınıfın static olamayan üyelerine nesneler aracılığıyla erişirken s
 Class lar referans tipli özellikler gösterir, Yapılar ise değer tipli özellikler gösterirler. En temel fark budur.
 
 "enum" anahtar kelimesi enumeration yani numaralandırma kelimesinden gelir. Sayısal verilerı string ifadelerle saklamanızı sağlar. Okunabilirliğe katkısı da tam olarak burdan gelir diyebiliriz.
+
+şimdi sen neden RestApi kullanıyorsun direkt veritabanı ile iletişime geç öyle de yaparız yok abicim o işler öyle olmuyor veri tabanının güvenliği önemli değil mi ? o yüzden restApi kullanacaksın. Api ne ile yazılmış bizim için önemli değil bu bir avantaj. 
