@@ -16,3 +16,19 @@ Class lar referans tipli özellikler gösterir, Yapılar ise değer tipli özell
 "enum" anahtar kelimesi enumeration yani numaralandırma kelimesinden gelir. Sayısal verilerı string ifadelerle saklamanızı sağlar. Okunabilirliğe katkısı da tam olarak burdan gelir diyebiliriz.
 
 şimdi sen neden RestApi kullanıyorsun direkt veritabanı ile iletişime geç öyle de yaparız yok abicim o işler öyle olmuyor veri tabanının güvenliği önemli değil mi ? o yüzden restApi kullanacaksın. Api ne ile yazılmış bizim için önemli değil bu bir avantaj. 
+
+restApi Rest mimariprensiplerini taşıyan api lardır. Yani restApi a istek gönderecek isen onun kurallarına göre istek göndermelisin. 
+
+"Proxy" terimi, bir bilgisayar ağında bir cihazın, başka bir cihazın (istemci veya sunucu) yerine geçerek, bu cihazla olan iletişimi kontrol etmesini ifade eder. Proxy'ler genellikle bir ara katman (intermediary) olarak çalışır ve ağ trafiğini yönlendirirken çeşitli işlevleri yerine getirir. 
+Proxy'ler, güvenlik, performans optimizasyonu, içerik filtreleme gibi çeşitli nedenlerle kullanılabilirler. İstemci ve sunucu arasında ara bir katman olarak çalıştıkları için, ağ trafiğini yönlendirme ve kontrol etme yetenekleri sağlarlar.
+
+
+Load balancer (yük dengeleyici), bir bilgisayar sistemine gelen ağ trafiğini yönetmek ve dengeli bir şekilde dağıtmak amacıyla kullanılan bir cihaz veya yazılımdır. Load balancer, bir dizi sunucu arasında iş yükünü eşit bir şekilde paylaşarak sistem performansını artırır, yükü dağıtarak tek bir sunucunun üzerindeki baskıyı azaltır ve yüksek erişilebilirlik sağlar.
+
+rest mimarisinde http bize json ya da xml gönderir. 
+
+put ve patch farkı; bence patch daha iyi çünkü put daki gibi 1 yeri değiştirmek istersek hepsini yazmaya gerek kalmıyor sadece belirtilen değeri değiştiriyoruz. 
+idempotent nedir? Safe metodlar yani get gibi metod'dur. get napıyor sadece veriyi getiriyor deği mi yani veride bir değişiklik yapmıyor. Ama post neyapıyor veride değişiklik yapıyor bu idempotent değildir işte. 
+
+Bilgi: json formatının doğru olup olmadığını doğrulamak için JSONLINT sitesini kullanabilirsiniz. 
+
