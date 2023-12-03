@@ -52,5 +52,8 @@ DELETE AN EMPLOYEE (Fake API)
 curl -X DELETE http://localhost:3000/employees/:employee_id
 UPDATE AN EMPLOYEE (Fake API) - PATCH
 curl -X PATCH -H "Content-Type: application/json" -d '{ "first_name": "Ricardo", "last_name": "Quaresma"}' http://localhost:3000/employees/:employee_id
-UPDATE AN EMPLOYEE (Fake API) - PUT
 curl -X PUT -H "Content-Type: application/json" -d '{ "first_name": "Ricardo", "last_name": "Quaresma"}' http://localhost:3000/employees/:employee_id
+UPDATE AN EMPLOYEE (Fake API) - PUT
+
+promise bizde ne işe yarar bir işlemi aslında kontrol etmeyi amaçlıyor diyebiliriz. Bizim bu promise de resolve ve reject paramtereleri var resolve bizim olumlu sonuçlar için kullandığımız parametre reject de olumsuz durumlar için ama burası önemli dikkat kesilelim reject için catch ile yakalamamız gerekli resolve için de then kullanılıyor yani olumlu ise then dekileri yap gibi. Patikadaki günlük notum bu. İyi kodlamalar. Şu durumda var resolve ve reject i aynı anda kullanmaya kalkarsan ilk kullanılan geçerli olur.
+await aync işlemleride aslında promise yapısı gibidir. Başka bir yazım şekli desek çok da abartı kaçmaz galiba. yani aslında işlemleri bir genel bir fonksiyonda yazıyoruz ardından bu fonksiyona diyoruz sen async sin kardeşim burası da tmm await de bu genel fonksiyonun içindeki işlemlere knk sen bi işlemini tamamla öyle devam ederiz demektir. Yani kısaca bu karışık asenkron işlemlerinde sanki senkron işlem yapıyormuşuz gibi göstermeye yarıyor yani kod okunurluğunu arttırıyor. Bu arada bu await async işlemlerinde try catch baya baya kullanılır. 
