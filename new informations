@@ -57,3 +57,18 @@ UPDATE AN EMPLOYEE (Fake API) - PUT
 
 promise bizde ne işe yarar bir işlemi aslında kontrol etmeyi amaçlıyor diyebiliriz. Bizim bu promise de resolve ve reject paramtereleri var resolve bizim olumlu sonuçlar için kullandığımız parametre reject de olumsuz durumlar için ama burası önemli dikkat kesilelim reject için catch ile yakalamamız gerekli resolve için de then kullanılıyor yani olumlu ise then dekileri yap gibi. Patikadaki günlük notum bu. İyi kodlamalar. Şu durumda var resolve ve reject i aynı anda kullanmaya kalkarsan ilk kullanılan geçerli olur.
 await aync işlemleride aslında promise yapısı gibidir. Başka bir yazım şekli desek çok da abartı kaçmaz galiba. yani aslında işlemleri bir genel bir fonksiyonda yazıyoruz ardından bu fonksiyona diyoruz sen async sin kardeşim burası da tmm await de bu genel fonksiyonun içindeki işlemlere knk sen bi işlemini tamamla öyle devam ederiz demektir. Yani kısaca bu karışık asenkron işlemlerinde sanki senkron işlem yapıyormuşuz gibi göstermeye yarıyor yani kod okunurluğunu arttırıyor. Bu arada bu await async işlemlerinde try catch baya baya kullanılır. 
+
+
+single-threaded  multi threaded  arasındaki fark nedir ?
+ Single-threaded (Tek İş Parçacıklı):
+
+Tek iş parçacığına sahip programlar sıralı bir şekilde çalışır. Yani, bir görevin tamamlanması beklenir ve ardından bir sonraki görev başlatılır.
+İşlemler birbirini engelleme eğilimindedir. Eğer bir görev bir kaynağı (örneğin, bir dosyayı veya ağ bağlantısını) kullanıyorsa, diğer görevler bu kaynağa erişmeyi beklemek zorundadır.
+Örneğin, JavaScript'in tarayıcıda çalışan bir uygulaması genellikle single-threaded'dir.
+
+Multi-threaded (Çoklu İş Parçacıklı):
+
+Çoklu iş parçacıklı programlar, aynı anda birden fazla iş parçacığını yürütebilir. Her iş parçacığı bağımsız olarak çalışabilir.
+Bu, aynı anda birden fazla görevin eşzamanlı olarak yürütülmesine olanak tanır. Bu, özellikle çoklu çekirdekli işlemcilerde performans avantajı sağlar.
+İş parçacıkları genellikle birbirleriyle iletişim kurabilir ve paylaşılan kaynaklara (veri yapısı, bellek alanları, vb.) erişebilir.
+Çoklu iş parçacıklı programlar, genellikle paralel programlama ve eşzamanlı programlama kavramları ile ilişkilidir. Multi-threading, özellikle büyük ve karmaşık uygulamalarda performansı artırabilir, ancak iş parçacıkları arasındaki senkronizasyon ve veri paylaşımı gibi sorunları da beraberinde getirebilir. Bu nedenle, çoklu iş parçacıklı programlamayı doğru bir şekilde yönetmek önemlidir.
