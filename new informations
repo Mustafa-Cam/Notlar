@@ -72,3 +72,5 @@ Multi-threaded (Çoklu İş Parçacıklı):
 Bu, aynı anda birden fazla görevin eşzamanlı olarak yürütülmesine olanak tanır. Bu, özellikle çoklu çekirdekli işlemcilerde performans avantajı sağlar.
 İş parçacıkları genellikle birbirleriyle iletişim kurabilir ve paylaşılan kaynaklara (veri yapısı, bellek alanları, vb.) erişebilir.
 Çoklu iş parçacıklı programlar, genellikle paralel programlama ve eşzamanlı programlama kavramları ile ilişkilidir. Multi-threading, özellikle büyük ve karmaşık uygulamalarda performansı artırabilir, ancak iş parçacıkları arasındaki senkronizasyon ve veri paylaşımı gibi sorunları da beraberinde getirebilir. Bu nedenle, çoklu iş parçacıklı programlamayı doğru bir şekilde yönetmek önemlidir.
+
+module kavramı da bir dosyada yapılan işlemi başka dosyalarda da kullnamk için kullnadığımız bir yapıdır.
