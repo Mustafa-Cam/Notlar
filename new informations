@@ -74,3 +74,4 @@ Bu, aynı anda birden fazla görevin eşzamanlı olarak yürütülmesine olanak 
 Çoklu iş parçacıklı programlar, genellikle paralel programlama ve eşzamanlı programlama kavramları ile ilişkilidir. Multi-threading, özellikle büyük ve karmaşık uygulamalarda performansı artırabilir, ancak iş parçacıkları arasındaki senkronizasyon ve veri paylaşımı gibi sorunları da beraberinde getirebilir. Bu nedenle, çoklu iş parçacıklı programlamayı doğru bir şekilde yönetmek önemlidir.
 
 module kavramı da bir dosyada yapılan işlemi başka dosyalarda da kullnamk için kullnadığımız bir yapıdır.
+node modules klasörü silinse bile dependencies de olan paketlerimizi npm install ile tekrar yükleyebiliriz. nice. 
