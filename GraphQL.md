@@ -1,0 +1,40 @@
+GraphQl kısaca rest'in gelişmiş halidir desek yeridir. Facebook(Meta) tarafından geliştirilmiştir.
+
+ # GRAPHQL AVANTAJLARI
+
+## 1. Sadece gerekli kolonları sorgulayabilmek. 
+
+şimdi mobil ve web istemcisinden ayrı iki istek gelecek. mobil diyecek bana sadece username web diyecek bana hepsini yolla. yani aynı backend üzerinden  farklı client'lar tarafından erişip, farklı farklı cevaplar bekleyebiliyoruz. ve rest de ne oluyordu isteği iletiyorsun response olarak o modeldeki tüm kolonlar geliyordu ama graphql de istediğin kolonları iletebiliyorsun.
+
+Burda webden gelen isteğe cevap gönderdiğimizi düşünün
+```
+ query WebAppPostsQuery{
+    posts{
+      id
+      username
+      description
+      created_at
+      comments{
+        id
+        username
+      }
+    }
+  }
+```
+
+
+burda da mobilden gelen isteğe cevap döndürdüğümüzü düşünün
+```
+  query WebAppPostsQuery{
+    posts{
+      id
+      username
+      description
+    }
+  }
+
+```
+
+
+
+
