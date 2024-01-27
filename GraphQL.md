@@ -167,3 +167,6 @@ subscription{
     }
   }
 ```
+
+# Non Nullable Fields
+Alanların sonuna ! işareti koyarsanız bu bu alanın null olamayacağını gösterir. Dökümanlardan bakabilirsiniz. ( https://www.apollographql.com/blog/using-nullability-in-graphql )
