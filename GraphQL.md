@@ -196,3 +196,11 @@ type Query {
 }
 
 ```
+
+Yukarıdaki GraphQL şeması aşağıdaki özellikleri içerir:
+
+Author ve Book adında iki ana tipimiz var.
+Author tipi, bir yazarın kimliği, adı ve yazdığı kitaplar listesini içerir.
+Book tipi, bir kitabın kimliği, başlığı ve yazarı (Author tipine referans) içerir.
+Query türü, belirli bir yazarı veya kitabı sorgulamak için gereken sorguları içerir. Ayrıca, tüm yazarları veya kitapları almak için sorguları içerir.
+Bu şema, bir kitabın bir yazarı olduğunu ve bir yazarın birden fazla kitabı olabileceğini gösterir. Bu şekilde, ilişkili verileri GraphQL üzerinden sorgulayabilir ve ilişkili verileri alabilirsiniz.
