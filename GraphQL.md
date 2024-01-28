@@ -170,3 +170,29 @@ subscription{
 
 # Non Nullable Fields
 Alanların sonuna ! işareti koyarsanız bu bu alanın null olamayacağını gösterir. Dökümanlardan bakabilirsiniz. ( https://www.apollographql.com/blog/using-nullability-in-graphql )
+
+
+# Custom Types
+mesela bir yazarın birden fazla kitabı olabilir ama bir kitabın bir yazarı vardır değil mi ?
+
+```
+type Author {
+  id: ID!
+  name: String!
+  books: [Book!]!
+}
+
+type Book {
+  id: ID!
+  title: String!
+  author: Author!
+}
+
+type Query {
+  author(id: ID!): Author
+  book(id: ID!): Book
+  authors: [Author!]!
+  books: [Book!]!
+}
+
+```
