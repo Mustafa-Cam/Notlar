@@ -26,8 +26,8 @@ Bu komut, commit geçmişini değiştirir ve mevcut branch'in durumunu belirli b
 Eğer lokaldeki çalışma dizininde yaptığınız değişiklikleri de geri almak istiyorsanız, --hard seçeneğini kullanmanız gerekecektir. Ancak bu durumda dikkatli olmanız önemlidir, çünkü bu işlem geri döndürülemez.
 yazarak öğrenme bence iyi bir taktik sizde denemelisiniz. 
 --------
-şimdi git remote nedir ? çok kısa bir tanım ile biz git init ile aslında ne yapıyoruz knk aslında kendi projemiz için repo oluşturuyoruz sonra githubun web sitesinden ne yapıyoruz new repository değil mi 
-bu ne demek oluyor githubun kendi sunucusuna bir repo aç demektir noldu elimizde 2 tane repo bi bizim projede bir de githubun kendisinde şimdi bunları eşleştirmek gerek bunun için kullanıyoruz kullanım 
+şimdi git remote nedir ? çok kısa bir tanım ile biz git init ile aslında ne yapıyoruz aslında kendi projemiz için repo oluşturuyoruz sonra githubun web sitesinden ne yapıyoruz new repository değil mi 
+bu ne demek oluyor githubun kendi sunucusuna bir repo aç demektir ne oldu elimizde 2 tane repo bi bizim projede bir de githubun kendisinde şimdi bunları eşleştirmek gerek bunun için kullanıyoruz kullanım 
 şu şekilde  git remote add origin "burayada githubun kendi reposu gelecek" yani bizim repo ya github da açılan repo eklenecek bizde bu şekilde bizim yaptığımız değişiklikleri uzak sunucudaki yani githubdaki 
 repoya da değişiklikleri aktarabileceğiz. 
 -----------
