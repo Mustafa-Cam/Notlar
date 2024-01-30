@@ -31,3 +31,6 @@ bu ne demek oluyor githubun kendi sunucusuna bir repo aç demektir ne oldu elimi
 şu şekilde  git remote add origin "burayada githubun kendi reposu gelecek" yani bizim repo ya github da açılan repo eklenecek bizde bu şekilde bizim yaptığımız değişiklikleri uzak sunucudaki yani githubdaki 
 repoya da değişiklikleri aktarabileceğiz. 
 -----------
+gitignore ve env ==> kısaca gitignore kendi vscode geliştirme ortamımızda push ederken göndermek istemediğimiz dosyaları barındırdığımız dosya görevi bu mesela node_modules klasörünü yayınlamak istemezsen o zaman gitignore a yaz.
+env ise şifreleri  sakladığımız ortam bunu da yayınladığımızda github da gözükmez. dosyaları paylaşıyoruz ama şifreleri dosyalarda gösteremeyiz değil mi yoksa herkes görür. .env dosyamız da bunun için.  
+-----------
