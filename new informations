@@ -77,3 +77,4 @@ module kavramı da bir dosyada yapılan işlemi başka dosyalarda da kullnamk i�
 node modules klasörü silinse bile dependencies de olan paketlerimizi npm install ile tekrar yükleyebiliriz. nice. 
 --------
 middleware'ları kullanmak için app.use kullanıyoruz.
+req ve res arasındaki her şey middleware oluyor get vs de mw oluyor ve next metodumuz da bir sonraki mw'a geç anlamına gelir. 
