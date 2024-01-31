@@ -75,3 +75,5 @@ Bu, aynı anda birden fazla görevin eşzamanlı olarak yürütülmesine olanak 
 
 module kavramı da bir dosyada yapılan işlemi başka dosyalarda da kullnamk için kullnadığımız bir yapıdır.
 node modules klasörü silinse bile dependencies de olan paketlerimizi npm install ile tekrar yükleyebiliriz. nice. 
+--------
+middleware'ları kullanmak için app.use kullanıyoruz.
